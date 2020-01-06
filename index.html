@@ -1,36 +1,108 @@
 <!doctype html>
 <html class="no-js" lang="">
-
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <title>CreativeCapitalWeather</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Lobster|Roboto&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
-
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
-
+<canvas id="icon1" width="128" height="128"></canvas>
+<canvas id="icon2" width="128" height="128"></canvas>
   <meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
+  
 <header>
-  <h1>"Creative Capital Weather"</h1>
-  <button class="button"></button>
+  <h1>Creative Capital</h1>
+  <h2>Weather</h2>
+
+<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Info</button>
+
+
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+  
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Modal Header</h4>
+      </div>
+      <div class="modal-body">
+        <p>Creative Capital Weather is a weather app developed to bring you the current weather or weekly weather for Providence, Rhode Island.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+</div>
+  <p class="message">Providing Daily Weather</p>
 </header>
+
 <main>
-  <section class="today"></section>
-  <section class="monday"></section>
+
+    <div class="current" id="current">
+     <h1>Today</h1>
+     <p class="home" id="home">Home</p>
+ <div class="icon"></div>
+    <div class="summary">
+      <p></p>
+    </div>
+    
+    <div class="high">
+      <h3>High</h3>
+      <p></p>
+    </div>
+    
+    <div class="low">
+      <h3>Low</h3>
+      <p></p>
+    </div>
+  </div>
+
+
+  <section class="monday" id="monday">
+    <h2>Monday</h2>
+ <div class="icon"></div>
+    
+    <div class="summary">
+      <p></p>
+    </div>
+    
+    <div class="high">
+      <h3>High</h3>
+      <p></p>
+    </div>
+    
+    <div class="low">
+      <h3>Low</h3>
+      <p></p>
+    </div>
+  </div>
+</div>
+</section>
+
   <section class="tuesday"></section>
   <section class="wedensday"></section>
   <section class="thursday"></section>
   <section class="friday"></section>
   <section class="saturday"></section>
   <section class="sunday"></section>
+
 </main>
 
 
