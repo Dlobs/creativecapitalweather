@@ -14,12 +14,12 @@ main .saturday {
 h5{
 	grid-column:2;
 }
-.icon{
+.icon7 {
 grid-column:2;	
 	grid-row:1;
 }
 
-.icon img {
+.icon7 img {
 	grid-row:2;
 grid-column:2;
 height:300px;
@@ -40,29 +40,36 @@ grid-row:2;
   align-content:center;
 
 }
+h2{
+    font-family: 'Lobster', cursive;
+}
+p{
 
-.high {
+font-family: 'Roboto', sans-serif;
+}
+
+.high6 {
 	grid-row:3;
 grid-column:1;
 }
 
-.high h3 {
+.high6 h3 {
 grid-column:1;
 }
 
-.high p {
+.high6 p {
 grid-column:1;
 }
 
-.low {
+.low6 {
 		grid-row:3;
 grid-column:2;
 }
 
-.low h3 {
+.low6 h3 {
 grid-column:2;
 }
 
-.low p {
+.low6 p {
 grid-column:2;
 }

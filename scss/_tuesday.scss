@@ -12,15 +12,24 @@ main .tuesday {
 
 
 }
+h2{
+    font-family: 'Lobster', cursive;
+}
+p{
+
+font-family: 'Roboto', sans-serif;
+}
+
+
 h5{
 	grid-column:2;
 }
-.icon{
+.icon3 {
 grid-column:2;	
 	grid-row:1;
 }
 
-.icon img {
+.icon3 img {
 	grid-row:2;
 grid-column:2;
 height:300px;
@@ -42,28 +51,28 @@ grid-row:2;
 
 }
 
-.high {
+.high2 {
 	grid-row:3;
 grid-column:1;
 }
 
-.high h3 {
+.high2 h3 {
 grid-column:1;
 }
 
-.high p {
+.high2 p {
 grid-column:1;
 }
 
-.low {
+.low2 {
 		grid-row:3;
 grid-column:2;
 }
 
-.low h3 {
+.low2 h3 {
 grid-column:2;
 }
 
-.low p {
+.low2 p {
 grid-column:2;
 }

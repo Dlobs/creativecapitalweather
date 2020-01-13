@@ -14,12 +14,12 @@ main .friday {
 h5{
 	grid-column:2;
 }
-.icon{
+.icon6 {
 grid-column:2;	
 	grid-row:1;
 }
 
-.icon img {
+.icon6 img {
 	grid-row:2;
 grid-column:2;
 height:300px;
@@ -40,29 +40,36 @@ grid-row:2;
   align-content:center;
 
 }
+h2{
+    font-family: 'Lobster', cursive;
+}
+p{
 
-.high {
+font-family: 'Roboto', sans-serif;
+}
+
+.high5 {
 	grid-row:3;
 grid-column:1;
 }
 
-.high h3 {
+.high5 h3 {
 grid-column:1;
 }
 
-.high p {
+.high5 p {
 grid-column:1;
 }
 
-.low {
+.low5 {
 		grid-row:3;
 grid-column:2;
 }
 
-.low h3 {
+.low5 h3 {
 grid-column:2;
 }
 
-.low p {
+.low5 p {
 grid-column:2;
 }

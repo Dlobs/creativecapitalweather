@@ -86,15 +86,47 @@ function displayData(forecast){
 	// I can add data from the "Daily" array like this
 
 	$('.today').html(forecast.daily.data[0].temperatureHigh);
-	$('.monday h2').html(displayDay(0));
-		$('.tuesday h2').html(displayDay(1));
-			$('.wedensday h2').html(displayDay(2));
-					$('.thursday h2').html(displayDay(3));
-						$('.friday h2').html(displayDay(4))
-							$('.saturday h2').html(displayDay(5))
-							$('.sunday h2').html(displayDay(6))
+	    $('.icon1').html(displayIcon(forecast.daily.data[0].icon));
+         $('.high p').html(Math.round(forecast.daily.data[0].temperatureHigh));
+         $('.low p').html(Math.round(forecast.daily.data[0].temperatureLow));
 
-    $('.icon1').html(displayIcon(forecast.daily.data[1].icon));
+	$('.monday h2').html(displayDay(0));
+       $('.icon2').html(displayIcon(forecast.daily.data[0].icon));
+   $('.high1 p').html(Math.round(forecast.daily.data[0].temperatureHigh));
+         $('.low1 p').html(Math.round(forecast.daily.data[0].temperatureLow));
+
+		$('.tuesday h2').html(displayDay(1));
+       $('.icon3').html(displayIcon(forecast.daily.data[1].icon));
+   $('.high2 p').html(Math.round(forecast.daily.data[1].temperatureHigh));
+         $('.low2 p').html(Math.round(forecast.daily.data[1].temperatureLow));
+
+			$('.wedensday h2').html(displayDay(2));
+       $('.icon4').html(displayIcon(forecast.daily.data[2].icon));
+   $('.high3 p').html(Math.round(forecast.daily.data[2].temperatureHigh));
+         $('.low3 p').html(Math.round(forecast.daily.data[2].temperatureLow));
+
+					$('.thursday h2').html(displayDay(3));
+       $('.icon5').html(displayIcon(forecast.daily.data[3].icon));
+   $('.high4 p').html(Math.round(forecast.daily.data[3].temperatureHigh));
+         $('.low4 p').html(Math.round(forecast.daily.data[3].temperatureLow));
+
+						$('.friday h2').html(displayDay(4))
+       $('.icon6').html(displayIcon(forecast.daily.data[4].icon));
+   $('.high5 p').html(Math.round(forecast.daily.data[4].temperatureHigh));
+         $('.low5 p').html(Math.round(forecast.daily.data[4].temperatureLow));
+
+							$('.saturday h2').html(displayDay(5))
+       $('.icon7').html(displayIcon(forecast.daily.data[5].icon));
+   $('.high6 p').html(Math.round(forecast.daily.data[5].temperatureHigh));
+         $('.low6 p').html(Math.round(forecast.daily.data[5].temperatureLow));
+
+							$('.sunday h2').html(displayDay(6))
+       $('.icon8').html(displayIcon(forecast.daily.data[6].icon));
+   $('.high7 p').html(Math.round(forecast.daily.data[6].temperatureHigh));
+         $('.low7 p').html(Math.round(forecast.daily.data[6].temperatureLow));
+
+
+
 	
 	// In this example, the high temperature for the first day of the week
 	// (referenced by the number 0) is written as HTML inside the <div class="today"> element
@@ -204,55 +236,11 @@ function timeConverter(UNIX_timestamp){
 /* -----------------------------------------------
    Function for adding icon files
    ----------------------------------------------- */
+
 function displayIcon(n){
 	switch(n) {
 		case "clear-day":
-    		return '<img src="img/icon/sunny.jpg" alt="Clear Day">';
-    		break;
-    	case "clear-night":
-    		return '<img src="img/mobilehome.jpg" alt="Clear Night" id="night">';
-    		break;
-    	case "rain":
-    		return '<img src="img/icon/cloud-rain-alt.svg" alt="Rain" id="rain">';
-    		break;
-    	case "snow":
-    		return '<img src="img/icons/Snowflake.svg" alt="Snow">';
-    		break;
-    	case "sleet":
-    		return '<img src="img/icons/Cloud-Hail.svg" alt="Sleet">';
-    		break;
-    	case "wind":
-    		return '<img src="img/icons/Wind.svg" alt="Wind">';
-    		break;
-    	case "fog":
-    		return '<img src="img/icons/Cloud-Fog.svg" alt="Fog">';
-    		break;
-    	case "cloudy":
-    		return '<img src="img/cloudy.jpg" alt="Cloudy">';
-    		break;
-    	case "partly-cloudy-day":
-    		return '<img src="img/partylysunny.jpg" alt="Partly Cloudy Day">';
-    		break;
-    	case "partly-cloudy-night":
-    		return '<img src="img/icons/Cloud-Moon.svg" alt="Partly Cloudy Night">';
-    		break;
-    	case "hail":
-    		return '<img src="img/icons/Cloud-Hail.svg" alt="Hail">';
-    		break;
-    	case "thunderstorm":
-    		return '<img src="img/icons/Cloud-Lightening.svg" alt="Thunderstorm">';
-    		break;
-    	case "tornado":
-    		return '<img src="img/icons/Tornado.svg" alt="Tornado">';
-    		break;
-  		default:
-    		// code block
-	}
-}
-function displayIcon(n){
-	switch(n) {
-		case "clear-day":
-    		return '<img src="img/sunny.jpg" alt="Clear Day" id="sunnyday">';
+    		return '<img src="img/icons/cloud-rain-sun-alt.svg" alt="Clear Day" id="sunnyday">';
     		break;
     	case "clear-night":
     		return '<img src="img/icons/Moon-Full.svg" alt="Clear Night">';

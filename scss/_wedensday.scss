@@ -14,20 +14,16 @@ main .wedensday {
 
 
 }
-i .rain {
-  object-fit: cover;
-  height:100vh;
-  width:100vw;
-}
+
 h5{
   grid-column:2;
 }
-.icon{
+.icon4{
 grid-column:2;  
   grid-row:1;
 }
 
-.icon img {
+.icon4 img {
   grid-row:2;
 grid-column:2;
 height:300px;
@@ -48,29 +44,36 @@ grid-row:2;
   align-content:center;
 
 }
+h2{
+    font-family: 'Lobster', cursive;
+}
+p{
 
-.high {
+font-family: 'Roboto', sans-serif;
+}
+
+.high3 {
   grid-row:3;
 grid-column:1;
 }
 
-.high h3 {
+.high3 h3 {
 grid-column:1;
 }
 
-.high p {
+.high3 p {
 grid-column:1;
 }
 
-.low {
+.low3 {
     grid-row:3;
 grid-column:2;
 }
 
-.low h3 {
+.low3 h3 {
 grid-column:2;
 }
 
-.low p {
+.low3 p {
 grid-column:2;
 }
