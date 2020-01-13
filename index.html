@@ -1,5 +1,4 @@
 <!doctype html>
-<html class="no-js" lang="">
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -16,18 +15,19 @@
   <!-- Place favicon.ico in the root directory -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
-<canvas id="icon1" width="128" height="128"></canvas>
-<canvas id="icon2" width="128" height="128"></canvas>
+
   <meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
   
 <header>
-  <h1>Creative Capital</h1>
+    <h1>Creative Capital</h1>
   <h2>Weather</h2>
+  <img src="img/Logo.png" alt="logo" id="logo">
 
-<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Info</button>
+
+<button type="button" class="btn btn-info btn-lg" id="button" data-toggle="modal" data-target="#myModal">Info</button>
 
 
 <div id="myModal" class="modal fade" role="dialog">
@@ -37,7 +37,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Modal Header</h4>
+        <h4 class="modal-title">Creative Capital Weather</h4>
       </div>
       <div class="modal-body">
         <p>Creative Capital Weather is a weather app developed to bring you the current weather or weekly weather for Providence, Rhode Island.</p>
@@ -57,13 +57,16 @@
 
     <div class="current" id="current">
      <h1>Today</h1>
-     <p class="home" id="home">Home</p>
+     <p class="home" id="home">Possible Light rain in the evening and overnight.</p>
  <div class="icon"></div>
+<div class="img"></div>
+ <!-- actual image -->
     <div class="summary">
       <p></p>
     </div>
     
     <div class="high">
+
       <h3>High</h3>
       <p></p>
     </div>
@@ -75,150 +78,141 @@
   </div>
 
 
-  <section class="monday" id="monday">
-    <h2>Monday</h2>
- <div class="icon"></div>
+  <div class="monday" id="monday">
+    <h2></h2>
+ <div class="icon1"></div>
     
     <div class="summary">
-      <p></p>
+      <p>Possible light rain in the evening and overnight.</p>
     </div>
     
     <div class="high">
       <h3>High</h3>
-      <p></p>
+      <p>54°</p>
     </div>
     
     <div class="low">
       <h3>Low</h3>
-      <p></p>
-    </div>
-  </div>
-</div>
-</section>
+      <p>48°</p>
+   </div>
+ </div>
 
-  <section class="tuesday">
-      <h2>Tuesday</h2>
- <div class="icon"></div>
-    
-    <div class="summary">
-      <p></p>
-    </div>
-    
-    <div class="high">
-      <h3>High</h3>
-      <p></p>
-    </div>
-    
-    <div class="low">
-      <h3>Low</h3>
-      <p></p>
-    </div>
-  </div>
-</div>
-  </section>
-  <section class="wedensday">
-      <h2>wedensday</h2>
- <div class="icon"></div>
-    
-    <div class="summary">
-      <p></p>
-    </div>
-    
-    <div class="high">
-      <h3>High</h3>
-      <p></p>
-    </div>
-    
-    <div class="low">
-      <h3>Low</h3>
-      <p></p>
-    </div>
-  </div>
-</div>
-  </section>
-  <section class="thursday">
-      <h2>thursday</h2>
- <div class="icon"></div>
-    
-    <div class="summary">
-      <p></p>
-    </div>
-    
-    <div class="high">
-      <h3>High</h3>
-      <p></p>
-    </div>
-    
-    <div class="low">
-      <h3>Low</h3>
-      <p></p>
-    </div>
-  </div>
-</div>
-  </section>
-  <section class="friday">
-      <h2>friday</h2>
- <div class="icon"></div>
-    
-    <div class="summary">
-      <p></p>
-    </div>
-    
-    <div class="high">
-      <h3>High</h3>
-      <p></p>
-    </div>
-    
-    <div class="low">
-      <h3>Low</h3>
-      <p></p>
-    </div>
-  </div>
-</div>
-  </section>
-  <section class="saturday">
-      <h2>saturday</h2>
- <div class="icon"></div>
-    
-    <div class="summary">
-      <p></p>
-    </div>
-    
-    <div class="high">
-      <h3>High</h3>
-      <p></p>
-    </div>
-    
-    <div class="low">
-      <h3>Low</h3>
-      <p></p>
-    </div>
-  </div>
-</div>
-  </section>
-  <section class="sunday">
-      <h2>sunday</h2>
- <div class="icon"></div>
-    
-    <div class="summary">
-      <p></p>
-    </div>
-    
-    <div class="high">
-      <h3>High</h3>
-      <p></p>
-    </div>
-    
-    <div class="low">
-      <h3>Low</h3>
-      <p></p>
-    </div>
-  </div>
-</div>
-  </section>
 
+  <div class="tuesday" id="tuesday">
+      <h2></h2>
+ <div class="icon"></div>
+    
+    <div class="summary">
+      <p>Partly cloudy throughout the day.</p>
+    </div>
+    
+    <div class="high">
+      <h3>High</h3>
+      <p>54°</p>
+    </div>
+    
+    <div class="low">
+      <h3>Low</h3>
+      <p>45°</p>
+</div>
+</div>
+
+
+  <div class="wedensday" id="wedensday">
+      <h2></h2>
+ <div class="icon"></div>
+    
+    <div class="summary">
+      <p>Rain in the evening and overnight.</p>
+    </div>
+    
+    <div class="high">
+      <h3>High</h3>
+      <p>52°</p>
+    </div>
+    
+    <div class="low">
+      <h3>Low</h3>
+      <p>45°</p>
+</div>
+</div>
+
+  <div class="thursday" id="thrusday">
+      <h2></h2>
+ <div class="icon"></div>
+    
+    <div class="summary">
+      <p>Rain in the morning and afternoon.</p>
+    </div>
+    
+    <div class="high">
+      <h3>High</h3>
+      <p>50°</p>
+    </div>
+    
+    <div class="low">
+      <h3>Low</h3>
+      <p>46°</p>
+ </div>
+</div>
+
+  <div class="friday" id="friday">
+      <h2></h2>
+ <div class="icon"></div>
+    
+    <div class="summary">
+      <p>Overcast throughout the day.</p>
+    </div>
+    
+    <div class="high">
+      <h3>High</h3>
+      <p>52°</p>
+    </div>
+    
+    <div class="low">
+      <h3>Low</h3>
+      <p>47°</p>
+  </div>
+</div>
+
+  <div class="saturday" id="saturday">
+      <h2></h2>
+ <div class="icon"></div>
+    
+    <div class="summary">
+      <p>Possible light rain in the afternoon.</p>
+    </div>
+    
+    <div class="high">
+      <h3>High</h3>
+      <p>53°</p>
+    </div>
+    
+    <div class="low">
+      <h3>Low</h3>
+      <p>47°</p>
+    </div>
+</div>
+
+  <div class="sunday" id="sunday">
+      <h2></h2>
+ <div class="icon"></div>
+    
+    <div class="summary">
+      <p>Clear throughout the day</p>
+    </div>
+    
+    <div class="high">
+      <h3>High</h3>
+      <p>54°</p>
+    </div>
+    
+    <div class="low">
+      <h3>Low</h3>
+      <p>48°</p>
+</div>
+</div>
 </main>
-
 
   <!-- Add your site content here -->
 

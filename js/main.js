@@ -86,6 +86,15 @@ function displayData(forecast){
 	// I can add data from the "Daily" array like this
 
 	$('.today').html(forecast.daily.data[0].temperatureHigh);
+	$('.monday h2').html(displayDay(0));
+		$('.tuesday h2').html(displayDay(1));
+			$('.wedensday h2').html(displayDay(2));
+					$('.thursday h2').html(displayDay(3));
+						$('.friday h2').html(displayDay(4))
+							$('.saturday h2').html(displayDay(5))
+							$('.sunday h2').html(displayDay(6))
+
+    $('.icon1').html(displayIcon(forecast.daily.data[1].icon));
 	
 	// In this example, the high temperature for the first day of the week
 	// (referenced by the number 0) is written as HTML inside the <div class="today"> element
@@ -121,6 +130,8 @@ function displayData(forecast){
          $('.low p').html(Math.round(forecast.daily.data[0].temperatureLow));
       $('.summary').html(weatherData.currently.summary);
 
+   $('.high p').html(Math.round(forecast.daily.data[0].temperatureHigh));
+         $('.low p').html(Math.round(forecast.daily.data[0].temperatureLow));
 
 
 }
@@ -148,13 +159,13 @@ function displayDay(n){
 	var d = new Date();
 	var weekday = new Array();
 
-	weekday[0] = "S";
-	weekday[1] = "M";
-	weekday[2] = "T";
-	weekday[3] = "W";
-	weekday[4] = "T";
-	weekday[5] = "F";
-	weekday[6] = "S";
+	weekday[0] = "Monday";
+	weekday[1] = "Tuesday";
+	weekday[2] = "Wednesday";
+	weekday[3] = "Thursday";
+	weekday[4] = "Friday";
+	weekday[5] = "Saturday";
+	weekday[6] = "Sunday";
 
 	var dispDay = d.getDay() + n;
 
@@ -193,11 +204,55 @@ function timeConverter(UNIX_timestamp){
 /* -----------------------------------------------
    Function for adding icon files
    ----------------------------------------------- */
-
 function displayIcon(n){
 	switch(n) {
 		case "clear-day":
-    		return '<img src="img/icons/Sun.svg" alt="Clear Day">';
+    		return '<img src="img/icon/sunny.jpg" alt="Clear Day">';
+    		break;
+    	case "clear-night":
+    		return '<img src="img/mobilehome.jpg" alt="Clear Night" id="night">';
+    		break;
+    	case "rain":
+    		return '<img src="img/icon/cloud-rain-alt.svg" alt="Rain" id="rain">';
+    		break;
+    	case "snow":
+    		return '<img src="img/icons/Snowflake.svg" alt="Snow">';
+    		break;
+    	case "sleet":
+    		return '<img src="img/icons/Cloud-Hail.svg" alt="Sleet">';
+    		break;
+    	case "wind":
+    		return '<img src="img/icons/Wind.svg" alt="Wind">';
+    		break;
+    	case "fog":
+    		return '<img src="img/icons/Cloud-Fog.svg" alt="Fog">';
+    		break;
+    	case "cloudy":
+    		return '<img src="img/cloudy.jpg" alt="Cloudy">';
+    		break;
+    	case "partly-cloudy-day":
+    		return '<img src="img/partylysunny.jpg" alt="Partly Cloudy Day">';
+    		break;
+    	case "partly-cloudy-night":
+    		return '<img src="img/icons/Cloud-Moon.svg" alt="Partly Cloudy Night">';
+    		break;
+    	case "hail":
+    		return '<img src="img/icons/Cloud-Hail.svg" alt="Hail">';
+    		break;
+    	case "thunderstorm":
+    		return '<img src="img/icons/Cloud-Lightening.svg" alt="Thunderstorm">';
+    		break;
+    	case "tornado":
+    		return '<img src="img/icons/Tornado.svg" alt="Tornado">';
+    		break;
+  		default:
+    		// code block
+	}
+}
+function displayIcon(n){
+	switch(n) {
+		case "clear-day":
+    		return '<img src="img/sunny.jpg" alt="Clear Day" id="sunnyday">';
     		break;
     	case "clear-night":
     		return '<img src="img/icons/Moon-Full.svg" alt="Clear Night">';
