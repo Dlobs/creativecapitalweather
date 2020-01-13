@@ -87,6 +87,7 @@ function displayData(forecast){
 
 	$('.today').html(forecast.daily.data[0].temperatureHigh);
 	    $('.icon1').html(displayIcon(forecast.daily.data[0].icon));
+	    // $('current p').html(forecast.currently.data[0].temperature);
          $('.high p').html(Math.round(forecast.daily.data[0].temperatureHigh));
          $('.low p').html(Math.round(forecast.daily.data[0].temperatureLow));
 

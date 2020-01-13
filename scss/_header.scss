@@ -15,7 +15,8 @@ header {
   /* visual design */
   text-align: center;
 background-image:url(../img/Homebackground.jpg);
-
+background-repeat:no-repeat;
+background-size:cover;
 .logo{
 	grid-row:1;
 	grid-column:1;
