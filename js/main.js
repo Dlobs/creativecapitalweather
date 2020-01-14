@@ -1,3 +1,4 @@
+
 /* -----------------------------------------------
    Function for retrieving the main weather info
    ----------------------------------------------- */
@@ -297,6 +298,9 @@ icons.set("wind", Skycons.WIND);
 icons.set("fog", Skycons.FOG);
 
 icons.play();
+
+var elem = new Foundation.SmoothScroll(element, options);
+
  var modal = document.getElementById("myModal");
 
 // Get the button that opens the modal
@@ -321,3 +325,4 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
